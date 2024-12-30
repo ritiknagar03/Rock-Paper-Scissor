@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+}
+.choice-box{
+    display: grid;
+    width: 20%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.choice-box .user-choice{
+    border: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.output-box{
+    display: grid;
+    width: 20%;
+    grid-template-columns: 1fr 20px 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.output-box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 40px;
+    height: 100px;
+    cursor:default;
+    background-color: white;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border: 2px solid black;
+    height: 50px;
+    color: green;
+    background-color: white;
+    font-size: 25px;
+}
+
+
+
+@media (max-width: 1000px){
+    .choice-box{
+        width: 30%;
+    }
+    .output-box{
+        width: 30%;
+    }
+    .result{
+        width: 30%;
+    }
+
+}
+@media (max-width: 750px){
+    .choice-box{
+        width: 50%;
+    }
+    .output-box{
+        width: 50%;
+    }
+    .result{
+        width: 50%;
+    }
+
+}
+@media (max-width: 450px){
+    .choice-box{
+        width: 70%;
+    }
+    .output-box{
+        width: 70%;
+    }
+    .result{
+        width: 70%;
+    }
+}
+@media (max-width: 300px){
+    .choice-box{
+        width: 85%;
+    }
+    .output-box{
+        width: 85%;
+    }
+    .result{
+        width: 85%;
+    }
+}
